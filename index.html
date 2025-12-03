@@ -59,7 +59,7 @@
         }
 
         .card img {
-            width: 100%;
+            width: 50%;
             border-radius: 8px;
             margin-bottom: 15px;
         }
@@ -74,7 +74,16 @@
         }
 
         .author-info img {
-            border-radius: 50%; /* makes the image round */
+            border-radius: 50%;
+        }
+
+        @media (max-width: 600px) {
+            .author-info img {
+                max-width: 33%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
         }
     </style>
 </head>
