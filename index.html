@@ -77,9 +77,30 @@
             border-radius: 50%;
         }
 
+        .horizontal-screenshot img {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .vertical-screenshot img {
+            max-width: 33%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
         @media (max-width: 600px) {
             .author-info img {
                 max-width: 33%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            .vertical-screenshot img {
+                max-width: 80%;
                 margin-left: auto;
                 margin-right: auto;
                 display: block;
@@ -131,7 +152,9 @@
     demonstrates the platform’s ability to handle multimodal navigation and to address the specific needs of vulnerable
     people, such as the ones with impaired mobility, women, and children.</p>
 
-<img src="musa-navigation-app.png" alt="WizRD Example" style="width:100%;border-radius:8px">
+<div class="horizontal-screenshot">
+    <img src="musa-navigation-app.png" alt="WizRD Example" style="border-radius:8px">
+</div>
 
 <h2>Resources</h2>
 
@@ -190,15 +213,19 @@
     several applications have been developed by bachelor students under our supervision: an Indoor Navigation
     application, a Digital Signage system (also called "Totem", shown below), and additional tools.</p>
 
-<img src="totem.png" alt="Totem Home" style="width:100%;border-radius:8px">
+<div class="horizontal-screenshot">
+    <img src="totem.png" alt="Totem Home" style="border-radius:8px">
+</div>
 
-<p>At its core, the Indoor Navigation App (shown below) leverages BLE (Bluetooth Low Energy) beacons to accurately localize users
-    within a building and provide real-time directions to their destinations. Complementing the app, the Indoor
-    Navigation Totem is a fixed terminal that guides users through the building without requiring localization, ideal
-    for shared or public areas. Once the user displays a route on the Totem, a QR code that can be used to open the same
-    route on the app is provided.</p>
+<p>At its core, the Indoor Navigation App (shown below) leverages BLE (Bluetooth Low Energy) beacons to accurately
+    localize users within a building and provide real-time directions to their destinations. Complementing the app, the
+    Indoor Navigation Totem is a fixed terminal that guides users through the building without requiring localization,
+    ideal for shared or public areas. Once the user displays a route on the Totem, a QR code that can be used to open
+    the same route on the app is provided.</p>
 
-<img src="indoor-app.png" alt="Indoor App Home" style="width:25%;border-radius:8px">
+<div class="vertical-screenshot">
+    <img src="indoor-app.png" alt="Indoor App Home" style="border-radius:8px">
+</div>
 
 <p>The application allows users to report infrastructure issues by creating reports. When enough reports are present, an
     Incident is created automatically; to allow the administrators to manage and track these reports efficiently, we
