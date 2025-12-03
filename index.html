@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MUSA Info Kit</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            line-height: 1.6;
+            padding: 0 20px;
+            text-align: justify;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            font-weight: 600;
+        }
+
+        a {
+            color: #366D2D;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .cards {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .paper-cards {
+            grid-template-columns: 1fr;
+        }
+
+        .author-cards {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            text-align: center;
+        }
+
+        .card {
+            border: 2px solid #366D2D;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #366D2D;
+            font-weight: 600;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .author-info p {
+            margin: 5px 0;
+        }
+
+        .citation {
+            font-style: italic;
+            color: #333333;
+        }
+
+        .author-info img {
+            border-radius: 50%; /* makes the image round */
+        }
+    </style>
+</head>
+<body>
+<h1>Authors</h1>
+<div class="cards author-cards">
+    <div class="card author-info">
+        <img src="jm.png" alt="Jacopo Maltagliati">
+        <h3>Jacopo Maltagliati</h3>
+        <p>Department of Informatics, Systems, and Communication<br>University of Milan-Bicocca</p>
+        <p><a href="j.maltagliati@campus.unimib.it">j.maltagliati@campus.unimib.it</a></p>
+        <p><a href="https://www.unimib.it/jacopo-maltagliati">Personal Profile</a></p>
+    </div>
+    <div class="card author-info">
+        <img src="al.png" alt="Alberto Leporati">
+        <h3>Alberto Leporati</h3>
+        <p>Department of Informatics, Systems, and Communication<br>University of Milan-Bicocca</p>
+        <p><a href="mailto:alberto.leporati@unimib.it">alberto.leporati@unimib.it</a></p>
+        <p><a href="https://www.unimib.it/alberto-ottavio-leporati">Personal Profile</a></p>
+    </div>
+    <div class="card author-info">
+        <img src="dm.png" alt="Daniela Micucci">
+        <h3>Daniela Micucci</h3>
+        <p>Department of Informatics, Systems, and Communication<br>University of Milan-Bicocca</p>
+        <p><a href="mailto:daniela.micucci@unimib.it">daniela.micucci@unimib.it</a></p>
+        <p><a href="https://www.unimib.it/daniela-micucci">Personal Profile</a></p>
+    </div>
+</div>
+<h1>Outdoor Wayfinding - <em>Wiz</em>&hairsp;RD</h1>
+
+<p>Wayfinding platforms help users navigate both indoor and outdoor environments in real-time. Many existing systems
+    primarily optimize either distance or time, neglecting other important factors such as personal comfort, perception
+    of safety, or emotional responses to the environment.
+</p>
+
+<p>To overcome these limitations, we designed WizRD, a new wayfinding platform that allows users to express their
+    preferences and obtain routes that optimize them. This is made possible by the fact that WizRD can automatically
+    acquire and integrate new data sources, also enabling the definition of customized routing algorithms that take into
+    account both data sources and user preferences. In addition, to support decision-making, WizRD includes a
+    visualization dashboard that facilitates users’ understanding of how different environmental factors affect the
+    recommended routes. Finally, the platform supports multimodal navigation by integrating vehicle interchange stations
+    called LUMIs.</p>
+
+<p>A prototype implementation (pictured below) developed for the area around the University of Milano-Bicocca
+    demonstrates the platform’s ability to handle multimodal navigation and to address the specific needs of vulnerable
+    people, such as the ones with impaired mobility, women, and children.</p>
+
+<img src="musa-navigation-app.png" alt="WizRD Example" style="width:100%;border-radius:8px">
+
+<h2>Resources</h2>
+
+<div class="cards">
+    <div class="card">
+        <h3>📄 WizRD: A Personalized Wayfinding Platform for Enhanced Urban Navigation</h3>
+        <p class="citation">Maltagliati, J., Leporati, A., Micucci, D. (2026). WizRD: A Personalized Wayfinding Platform
+            for Enhanced Urban Navigation. In: Gervasi, O., et al. Computational Science and Its Applications – ICCSA
+            2025 Workshops. ICCSA 2025. Lecture Notes in Computer Science, vol 15898. Springer, Cham. <a
+                    href="https://doi.org/10.1007/978-3-031-97657-5_11" target="_blank">https://doi.org/10.1007/978-3-031-97657-5_11</a>
+        </p>
+        <p>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-97657-5_11"
+               target="_blank">🔗 Springer Link</a></p>
+    </div>
+    <div class="card">
+        <h3>📄 WizRD: An Interactive Data Analysis Platform for Urban Environments</h3>
+        <p class="citation">Maltagliati, J., Leporati, A., Micucci, D. (2025). WizRD: An Interactive Data Analysis
+            Platform for Urban Environments. Intervento presentato a: Italian Conference on ICT for Smart Cities &
+            Communities (I-CiTies 2025), Gaeta, Italia.</p>
+        <p>
+            <a href="https://boa.unimib.it/handle/10281/562185"
+               target="_blank">🔗 Bicocca Open Archive (BOA)</a></p>
+    </div>
+    <div class="card">
+        <h3>⚙️ Back-end Server</h3>
+        <p>The WizRD back-end server application. It provides a REST API for application development and takes care of
+            preparing database requests, marshalling data, and providing access to core functionalities such as routing
+            and visualization. Written in Rust with Rocket and SQLX, it can be deployed using Docker or Podman.</p>
+        <a href="https://github.com/sal-unimib/wizrd-backend-rs"
+           target="_blank">🔗 Software Architecture Laboratory (SAL) - GitHub</a>
+    </div>
+    <div class="card">
+        <h3>⚙️ Preprocessing Pipeline</h3>
+        <p>The WizRD preprocessing pipeline. It provides a rich toolset for gathering and enhancing data sources,
+            including OpenStreetMap, traffic, structured data in the form of Comma-Separated Values (CSV) files, and
+            heatmaps. The pipeline automatically calls the appropriate tools in the correct sequence and prepares the
+            Database for later usage via the backend application. It also provides SQL functions essential for routing,
+            such as the cost function, and visualization. It's written in a mix of C, C++, and Shell scripts.</p>
+        <a href="https://github.com/sal-unimib/wizrd-preprocessing"
+           target="_blank">🔗 Software Architecture Laboratory (SAL) - GitHub</a>
+    </div>
+    <div class="card">
+        <h3>⚙️ Demo Application/Dashboard</h3>
+        <p>A demonstrational, interactive web application that shows the core functionalities of the WizRD framework.
+            It's written in TypeScript and Node.js; it uses React for the UI elements and Leaflet.js for
+            visualization.</p>
+        <a href="https://github.com/sal-unimib/wizrd-demo-dashboard"
+           target="_blank">🔗 Software Architecture Laboratory (SAL) - GitHub</a>
+    </div>
+</div>
+
+<h1>Indoor Wayfinding</h1>
+
+<p>Additionally, we have been working on an indoor wayfinding solution for the university buildings. In this context,
+    several applications have been developed by bachelor students under our supervision: an Indoor Navigation
+    application, a Digital Signage system (also called "Totem", shown below), and additional tools.</p>
+
+<img src="totem.png" alt="Totem Home" style="width:100%;border-radius:8px">
+
+<p>At its core, the Indoor Navigation App (shown below) leverages BLE (Bluetooth Low Energy) beacons to accurately localize users
+    within a building and provide real-time directions to their destinations. Complementing the app, the Indoor
+    Navigation Totem is a fixed terminal that guides users through the building without requiring localization, ideal
+    for shared or public areas. Once the user displays a route on the Totem, a QR code that can be used to open the same
+    route on the app is provided.</p>
+
+<img src="indoor-app.png" alt="Indoor App Home" style="width:25%;border-radius:8px">
+
+<p>The application allows users to report infrastructure issues by creating reports. When enough reports are present, an
+    Incident is created automatically; to allow the administrators to manage and track these reports efficiently, we
+    have developed an Incident Management Dashboard and a fixed lifecycle for Incidents. When an Incident is present in
+    a critical part of the infrastructure (e.g., an elevator), that node is temporarily disabled and won't be used for
+    navigation.</p>
+
+<p>Both the application and the Totem connect to an internal EasyRoom instance that provides information about the
+    current lectures and exams, and can efficiently direct users to their destination. In the future, we would like to
+    integrate more data sources to provide contextually-aware routes that can avoid, for instance, heavily crowded
+    areas.</p>
+
+<p>Finally, to support these navigation tools, a Preprocessing Pipeline has been developed to convert architectural
+    floor plans into digital maps suitable for navigation purposes, ensuring the system can quickly adapt to different
+    buildings.</p>
+
+<p>The source code is not publicly available yet, as the project is still ongoing. If you'd like to contribute, feel
+    free to reach out.</p>
+
+<div class="cards">
+    <div class="card">
+        <h3>🎥 Demonstrational Video of the Indoor Wayfinding Totem Application</h3>
+        <p>
+            <a href="https://youtu.be/V5a7R6kvruA"
+               target="_blank">🔗 YouTube (Unlisted)</a></p>
+    </div>
+</div>
+
+</body>
+</html>
+
