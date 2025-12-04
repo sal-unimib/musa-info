@@ -106,9 +106,32 @@
                 display: block;
             }
         }
+
+        .poster-container {
+            position: relative;
+            width: 100%;
+            padding-top: 141.4%;
+            overflow: hidden;
+        }
+
+        .poster {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
+<div class="poster-container">
+    <embed class="poster"
+           src="poster.pdf"
+           type="application/pdf"
+           title="WizRD - Poster">
+</div>
+
 <h1>Authors</h1>
 <div class="cards author-cards">
     <div class="card author-info">
